@@ -2,24 +2,77 @@
 
 ## Project Name
 
-Identity Security with Entra
+Entra ID Security Posture Assessment
 
-## Author
 
-Gabriel Quero
+---
 
-## Duration
+## Sponsor
 
-Approximately 30-36 days
+Acme Healthcare Leadership Team
 
-## Certification Alignment
 
-SC-300
+---
 
-## Project Type
+## Project Purpose
 
-Enterprise Identity Security Consulting Engagement
+To assess the current security posture of the Microsoft Entra ID tenant and identify areas for improvement aligned with Zero Trust principles.
 
-## Goal
 
-Demonstrate the ability to assess, secure, administer, govern, troubleshoot, and document a Microsoft Entra environment.
+---
+
+## Objectives
+
+• Assess current identity controls
+
+• Review privileged access assignments
+
+• Evaluate authentication methods
+
+• Identify security gaps
+
+• Recommend remediation strategies
+
+• Reduce standing administrative access
+
+• Improve overall identity governance
+
+
+---
+
+## Deliverables
+
+Executive Summary
+
+Tenant Assessment
+
+Risk Findings
+
+Recommendations
+
+Identity Flow Diagram
+
+Authentication Assessment
+
+Conditional Access Review
+
+Privileged Access Assessment
+
+Runbooks
+
+Lessons Learned
+
+
+---
+
+## Stakeholders
+
+Executive Leadership
+
+IT Operations
+
+Security Team
+
+Identity Administrators
+
+End Users

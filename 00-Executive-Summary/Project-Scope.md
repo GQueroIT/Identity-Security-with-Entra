@@ -1,25 +1,60 @@
-# Scope
+# Project Scope
 
-Included:
+
+## In Scope
 
 Users
 
 Groups
 
-RBAC
+Administrative Roles
 
-MFA
+Authentication Methods
 
-PIM
+Multi-Factor Authentication
 
-CA
+Passwordless Authentication
+
+Conditional Access
 
 Identity Protection
 
-Governance
+Privileged Identity Management
 
-App Registrations
+Identity Governance
 
-PowerShell
+Service Principals
 
-Incident Response
+Managed Identities
+
+
+---
+
+## Out of Scope
+
+Endpoint Security
+
+Network Security
+
+SIEM Integrations
+
+Third-Party Applications
+
+On-Premises Active Directory
+
+Penetration Testing
+
+
+---
+
+## Assumptions
+
+Microsoft Entra ID is the primary Identity Provider.
+
+Users may access resources remotely.
+
+Administrative accounts currently exist.
+
+Licensing requirements are available for testing advanced features.
+
+Test accounts may be created as needed.

@@ -1,19 +1,44 @@
 # Assumptions
 
+This assessment was conducted under the following assumptions.
 
-This tenant is treated as if it was inherited.
+---
+
+## Environment Assumptions
+
+• The tenant is treated as an inherited environment.
+
+• Existing configurations may not align with Microsoft security best practices.
+
+• Previous documentation is unavailable.
+
+• Administrative access to the tenant has been granted.
 
 
-No previous documentation exists.
+---
+
+## Identity Assumptions
+
+• User accounts are simulated for testing purposes.
+
+• Guest access is currently unmanaged.
+
+• Service principals and workload identities may exist.
 
 
-Users are simulated.
+---
+
+## Security Assumptions
+
+• MFA adoption is inconsistent.
+
+• Conditional Access policies may be missing.
+
+• Identity governance controls may not be fully implemented.
 
 
-Guest access is unmanaged.
+---
 
+## Engagement Goal
 
-Security controls are assumed to be minimal.
-
-
-The objective is to improve security posture following Zero Trust principles.
+The objective of this assessment is to evaluate the tenant against Zero Trust principles and provide recommendations to improve the organization's identity security posture.

@@ -1,27 +1,72 @@
 # Methodology
 
-For each topic:
+
+## Phase 1 — Discovery
+
+Inventory tenant resources.
+
+Review users.
+
+Review groups.
+
+Review licensing.
+
+Review authentication settings.
+
+Review privileged roles.
 
 
-Assess
+
+---
+
+## Phase 2 — Analysis
+
+Assess risks.
+
+Review administrative assignments.
+
+Evaluate Conditional Access posture.
+
+Assess Identity Protection capabilities.
+
+Identify gaps.
 
 
-Learn
+
+---
+
+## Phase 3 — Recommendations
+
+Develop remediation plans.
+
+Prioritize findings.
+
+Align recommendations with Zero Trust.
 
 
-Build
+
+---
+
+## Phase 4 — Validation
+
+Test implemented controls.
+
+Validate authentication workflows.
+
+Verify access restrictions.
+
+Document outcomes.
 
 
-Test
 
+---
 
-Break
+## Phase 5 — Documentation
 
+Update diagrams.
 
-Fix
+Publish findings.
 
+Develop runbooks.
 
-Document
-
-
-Review
+Capture lessons learned.

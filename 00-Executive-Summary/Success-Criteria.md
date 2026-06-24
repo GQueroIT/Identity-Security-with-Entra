@@ -1,33 +1,49 @@
 # Success Criteria
 
-By project completion I should be able to:
+
+## Assessment Goals
 
 
-Assess tenant risks
-
-Implement security controls
-
-Configure PIM
-
-Design CA policies
-
-Secure workload identities
-
-Investigate compromised users
-
-Develop runbooks
-
-Administer Entra through PowerShell
+| Control | Success Metric |
+|---------|----------------|
+| MFA | 100% of privileged accounts protected |
+| SSPR | Enabled for all users |
+| Conditional Access | Baseline policies documented |
+| PIM | Standing Global Admin access minimized |
+| Identity Protection | Risk policies reviewed |
+| Governance | Access review process documented |
 
 
 
-Additionally:
+---
+
+## Technical Goals
 
 
-Pass SC-300
+Document current state.
 
-Publish GitHub repository
+Identify security gaps.
 
-Document lessons learned
+Map risks.
 
-Build confidence administering Entra
+Recommend remediation steps.
+
+Validate implemented controls.
+
+Produce operational documentation.
+
+
+---
+
+## Business Goals
+
+
+Reduce attack surface.
+
+Improve access management.
+
+Support Zero Trust initiatives.
+
+Increase visibility into privileged access.
+
+Establish repeatable identity security processes.
