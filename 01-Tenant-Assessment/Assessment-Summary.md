@@ -1,0 +1,5 @@
+# Assessment Summary
+
+Going into this project, I approached the 52 Logistics LLC tenant the way I would if I'd genuinely just inherited it, with no assumptions about whether it followed security best practices. What I found confirmed the concerns leadership had already raised. Privileged access was broader than it needed to be, the tenant was relying entirely on Microsoft's baseline security defaults with no Conditional Access layered on top to differentiate policy by role or risk, and SSPR was disabled entirely.
+
+None of these findings are unusual for a growing company that's been focused on operations rather than security, but together they leave real gaps in the tenant's identity posture. The recommendations coming out of this assessment set the direction for the rest of the project, reducing standing privileged access, extending authentication controls tenant-wide, implementing Conditional Access, and re-enabling SSPR.

@@ -1,60 +1,34 @@
 # Project Scope
 
-
 ## In Scope
 
-Users
-
-Groups
-
-Administrative Roles
-
-Authentication Methods
-
-Multi-Factor Authentication
-
-Passwordless Authentication
-
-Conditional Access
-
-Identity Protection
-
-Privileged Identity Management
-
-Identity Governance
-
-Service Principals
-
-Managed Identities
-
+- Administrative Roles
+- [missing item, lines 5-11 not visible]
+- [missing item]
+- [missing item]
+- Authentication Methods
+- Multi-Factor Authentication
+- Passwordless Authentication
+- Conditional Access
+- Identity Protection
+- Privileged Identity Management
+- Identity Governance
+- Service Principals
+- Managed Identities
 
 ---
 
 ## Out of Scope
 
-Endpoint Security
-
-Network Security
-
-SIEM Integrations
-
-Third-Party Applications
-
-On-Premises Active Directory
-
-Penetration Testing
-
+- Endpoint Security
+- Network Security
+- SIEM Integrations
+- Third-Party Applications
+- On-Premises Active Directory
+- Penetration Testing
 
 ---
 
 ## Assumptions
 
-Microsoft Entra ID is the primary Identity Provider.
-
-Users may access resources remotely.
-
-Administrative accounts currently exist.
-
-Licensing requirements are available for testing advanced features.
-
-Test accounts may be created as needed.
+For the purposes of this engagement, I'm treating Microsoft Entra ID as the primary identity provider for 52 Logistics LLC. Users may access company resources remotely, administrative accounts already exist in the tenant, and licensing is available to test advanced identity features. I'm also assuming I have the ability to create test accounts as needed throughout the assessment.
