@@ -42,6 +42,12 @@ I scoped three custom Conditional Access policies to what actually fits a compan
 
 **CA03, Block sign-in from unexpected locations.** 52 Logistics operates entirely within the US, so I built a named location for the US and blocked sign-ins falling outside it. This one reflects actual business geography for this specific company, not a generic template control.
 
+**CA04, Restrict Guest and Extrernal User Access** Guest and external accounts are one of the least visible risks in a tenant, since they can be invited into Teams or SharePoint without ever going through the same hardening applied to internal users. I built CA04, requiring MFA for every guest and external user type (B2B collaboration guest, B2B collaboration member, B2B direct connect user, internal guest, service provider, other external user) across all cloud apps, with Break-Glass Group excluded.
+
+Created and confirmed via Microsoft Graph PowerShell script (Create-52Logistics-CA04-GuestRestriction.ps1) rather than the portal, and verified the policy saved correctly with Get-MgIdentityConditionalAccessPolicy after an initial run failed due to a malformed group Id placeholder.
+
+52 Logistics doesn't currently have any real guest or external users in the tenant, so there's no Report-only sign-in activity to validate this one against yet. Documented as a policy built and confirmed to save correctly, with no reachable evidence available in this dev tenant due to the absence of guest traffic.
+
 ---
 
 ## Validation

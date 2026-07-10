@@ -35,6 +35,14 @@
 **Context:** 52 Logistics operates as a single-region US company. No policy accounted for expected sign-in geography.
 **Decision:** Built a US named location and CA03, blocking sign-in from outside it. Documented as a business-context decision, not a generic template control.
 
+## Decision: Add an external and guest user policy restricting access
+
+**Context** Guest and external accounts are one of the least visible risks in a tenant, since they can be invited into Teams or SharePoint without ever going through the same hardening applied to internal users.
+**Decision** Created and confirmed via Microsoft Graph PowerShell script (Create-52Logistics-CA04-GuestRestriction.ps1) rather than the portal, and verified the policy saved correctly with Get-MgIdentityConditionalAccessPolicy after an initial run failed due to a malformed group Id placeholder.
+
+52 Logistics doesn't currently have any real guest or external users in the tenant, so there's no Report-only sign-in activity to validate this one against yet. Documented as a policy built and confirmed to save correctly, with no reachable evidence available in this dev tenant due to the absence of guest traffic.
+
+
 ---
 
 ## Decision: Validate every policy in Report-only against both admin and non-admin accounts before enforcing
