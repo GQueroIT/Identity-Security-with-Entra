@@ -7,7 +7,7 @@ I inherited a tenant that was leaning entirely on Microsoft Security Defaults fo
 ## Conditional Access Architecture
 
 <p align="center">
-  <img src="./diagrams/conditional-access-diagram.png" alt="52 Logistics Conditional Access Architecture" width="100%">
+  <img src="./diagrams/conditional-access.png" alt="52 Logistics Conditional Access Architecture" width="100%">
 </p>
 
 <p align="center">
