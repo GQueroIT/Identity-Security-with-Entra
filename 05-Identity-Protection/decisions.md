@@ -56,6 +56,12 @@ CA05 (Sign-in risk, Require MFA) is staying in Report-only for now. This tenant 
 
 I'm intentionally keeping Natalie Lopez's user risk state open rather than remediating it immediately after validation. A real security team wouldn't clear a flagged account the moment MFA and a password change complete, they'd watch it for a period of sustained scrutiny first. I'm holding her risk state open for a few days, watching for a return to normal sign-in patterns, before dismissing the risk and marking the account safe. Full investigation reasoning is in Investigation-Remediation-NatalieLopez.md.
 
+## Natalie Lopez's risk state: resolved
+
+I held Natalie Lopez's user risk state open for several days after validation instead of clearing it immediately, specifically to see whether CA06 would resolve the case on its own during a real sign-in rather than only during the original test trigger. It did. A later sign-in was challenged for a secure password change, she completed it, and her risk state moved to Remediated automatically. No manual admin dismissal was needed.
+
+This is stronger evidence than the original validation alone. It shows CA06 working end to end against live traffic, not just against a deliberately staged test case.
+
 ## CA07: session hardening for accounts under active risk
 
 Password change and MFA close the immediate credential gap, but do nothing about session behavior after the fact. I built CA07, scoped to the same High user risk condition as CA06, using session controls rather than grant controls: sign-in frequency set to require reauthentication every time, and persistent browser sessions set to never persistent.
@@ -79,3 +85,10 @@ CA05 validated in Report-only, staying in Report-only pending more sign-in histo
 CA06 validated and enforced.
 CA07 planned, not yet built.
 Natalie Lopez's risk state open, under observation.
+
+## Current state
+
+CA05 validated in Report-only, staying in Report-only pending more sign-in history.
+CA06 validated, enforced, and confirmed resolving a real risk case through self-remediation.
+CA07 built and validated in Report-only.
+Natalie Lopez's risk state: Remediated. Case closed.

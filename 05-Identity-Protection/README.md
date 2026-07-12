@@ -6,6 +6,14 @@ This phase covers Microsoft Entra ID Protection: risk detections, risky users an
 
 ---
 
+## Identity Protection Architecture
+
+The following architecture diagram shows how Microsoft Entra ID Protection collects identity signals, calculates sign-in risk and user risk, passes those signals into Conditional Access, and applies the appropriate access controls for 52 Logistics LLC.
+
+![52 Logistics Microsoft Entra ID Protection Architecture](diagrams/identity-protection-integration.png)
+
+---
+
 ## Licensing
 
 Risk detections and risk-based Conditional Access require Entra ID P2, which the tenant didn't have going into this phase. I activated the 30-day P2 trial and licensed three accounts: my own admin account, a non-admin department user (Natalie Lopez), and a dedicated test account (Jordan Reed). Full reasoning for the license count is in decisions.md.
@@ -50,7 +58,9 @@ This shows CA03 and CA05 covering different ground. A location-based block only 
 
 **CA07 (Session hardening for high user risk):** built and validated in Report-only. Targets High user risk, the same trigger as CA06, but uses session controls instead of grant controls, requiring reauthentication every sign-in and disabling persistent browser sessions. Handles the ongoing session behavior of a flagged account while CA06 handles the immediate credential response. Reasoning and a licensing caveat about which apps fully support session controls are in decisions.md.
 
-**Natalie Lopez:** risk state intentionally left open for a monitoring window rather than remediated immediately, mirroring how a real account under investigation would be handled. Full writeup in Investigation-Remediation-NatalieLopez.md.
+**Natalie Lopez:** risk state intentionally held open for several days after initial validation to test whether CA06 would resolve a real case on its own. It did, a live sign-in was challenged, she completed the required password change, and her risk state moved to Remediated automatically. Full writeup in Investigation-Remediation-NatalieLopez.md.
+
+---
 
 ## Real-world complications
 
