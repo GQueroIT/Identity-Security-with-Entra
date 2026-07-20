@@ -91,8 +91,9 @@ Group-based licensing turned an explicit offboarding license-removal task into a
 
 ---
 
-## Repository StructureIdentity-Security-with-Entra
+## Repository Structure
 
+Identity-Security-with-Entra
 │
 ├── 00-Executive-Summary
 ├── 01-Tenant-Assessment
@@ -107,9 +108,9 @@ Group-based licensing turned an explicit offboarding license-removal task into a
 │   └── Reusable Graph PowerShell scripts referenced across phases
 │
 └── Each phase folder contains its own README, decisions.md,
-and supporting screenshots documenting real tenant evidence
+    and supporting screenshots documenting real tenant evidence
 
---- 
+---
 
 ## Related Work
 
