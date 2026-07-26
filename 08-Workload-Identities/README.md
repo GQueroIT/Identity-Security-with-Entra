@@ -8,6 +8,10 @@ This phase closes the final SC-300 domain of the project. It also produced more 
 
 ---
 
+![Workload Identity Security Architecture](diagrams/workload-identity.png)
+
+---
+
 # The Inventory That Audited Itself
 
 The phase opened by paying a debt. Assumptions.md committed on day one to inventorying whatever service principals came with the tenant, and Phase 08 finally built the tool: Get-52Logistics-WorkloadIdentityInventory.ps1, a Graph PowerShell script that classifies every service principal as Microsoft first-party or non-Microsoft, then flags credentials, ownerless apps, and admin-consented high-privilege permissions.
